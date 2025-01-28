@@ -5,23 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using static Terraria.WorldGen;
 
-namespace WeaponSkill.Items.SlashAxe
+namespace WeaponSkill.Items.InsectStaff.Weapons
 {
-    public class CopperSlashAxe : BasicSlashAxe
+    public class CopperInsectStaff : BasicInsectStaffItem
     {
-        public override Asset<Texture2D> SwordTex => GetSwordTex;
-
-        public override Asset<Texture2D> AxeTex => GetAxeTex;
-
-        public override Asset<Texture2D> DefTex => GetDefTex;
         public override void InitDefaults()
         {
             Item.damage = 8;
-            Item.knockBack = 3.5f;
-            Item.Size = new(64, 76);
-
-            SwordSize = new(42, 48);
-            AxeSize = new(38);
+            Item.knockBack = 5.5f;
+            Item.Size = new(74,80);
         }
         public override void AddRecipes()
         {
